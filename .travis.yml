@@ -30,6 +30,7 @@ addons:
         - libudev-dev
         - mesa-utils
         - libgl1-mesa-glx
+        - libgl1-mesa-dri
 before_install:
   - sudo add-apt-repository -y ppa:oibaf/graphics-drivers
   - sudo apt-get update -qq -y
