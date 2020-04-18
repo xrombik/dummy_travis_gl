@@ -1,12 +1,10 @@
-language: julia
-os:
-  - linux
-julia:
-  - release
 notifications:
   email: false
+language: python
+python:
+  - "2.7"
+dist: xenial
 sudo: required
-dist: trusty
 addons:
   apt:
      packages:
