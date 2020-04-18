@@ -77,4 +77,4 @@ before_script:
   - sleep 3 
   - LIBGL_ALWAYS_SOFTWARE=1 glxinfo
 script:
-  - timeout 5 "LIBGL_ALWAYS_SOFTWARE=1 glxgears"
+  - LIBGL_ALWAYS_SOFTWARE=1 timeout 5 glxgears
