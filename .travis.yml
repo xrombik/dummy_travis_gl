@@ -14,7 +14,7 @@ addons:
      packages:
         #- libgl1-mesa-glx
         #- libgl1-mesa-dri
-        #- mesa-utils
+        - mesa-utils
 before_script:
   - /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -screen 0 1400x900x24 -ac +extension GLX +render;
   - sleep 3 
