@@ -77,7 +77,6 @@ before_script:
   - sleep 3 
   - LIBGL_ALWAYS_SOFTWARE=1 glxinfo
   - glxinfo
-  - cat ${HOME}/.xpra/xorg.log
-#  - dmesg | grep vmw
+  - dmesg | grep vmw
 script:
   - timeout 5 glxgears
