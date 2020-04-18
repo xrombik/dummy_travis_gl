@@ -1,8 +1,8 @@
-language: julia
+language: python
+python:
+  "2.7"
 os:
   - linux
-julia:
-  - release
 notifications:
   email: false
 sudo: required
@@ -80,5 +80,4 @@ before_script:
   - cat ${HOME}/.xpra/xorg.log
 #  - dmesg | grep vmw
 script:
-  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
-  - LIBGL_ALWAYS_SOFTWARE=1 julia --check-bounds=yes --depwarn=no -e 'Pkg.clone(pwd()); Pkg.build("GLFW"); Pkg.test("GLFW"; coverage=true)'
+  - timeout 5 glxgears
