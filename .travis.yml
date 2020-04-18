@@ -12,7 +12,7 @@ services:
 addons:
   apt:
      packages:
-        - libgbm1
+        #- libgbm1
         - libgl1-mesa-glx
         - libgl1-mesa-dri
         - mesa-utils
