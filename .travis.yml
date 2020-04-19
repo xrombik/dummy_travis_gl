@@ -17,6 +17,12 @@ addons:
 before_script:
   - /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -screen 0 1400x900x24 -ac +extension GLX +render;
   - sleep 3 
+#deploy:
+#  provider: releases
+#  api_key: 
+#  file: glxgears.png 
+#  skip_cleanup: true
+#  draft: true
 script:
   - timeout 5 glxgears &
   - sleep 3
