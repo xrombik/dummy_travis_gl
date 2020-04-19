@@ -24,7 +24,7 @@ deploy:
   file: glxgears.png
   on:
     repo: xrombik/dummy_travis_gl
-  deploy.skip_cleanup: true
+  skip_cleanup: true
 script:
 - timeout 5 glxgears &
 - sleep 3
