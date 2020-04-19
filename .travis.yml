@@ -20,9 +20,10 @@ before_script:
 #deploy:
 #  provider: releases
 #  api_key: 
-#  file: glxgears.png 
+#  file: ./glxgears.png 
 #  skip_cleanup: true
 #  draft: true
+#  overwrite: true
 script:
   - timeout 5 glxgears &
   - sleep 3
