@@ -28,4 +28,4 @@ deploy:
   file: glxgears.png
   on:
     repo: xrombik/dummy_travis_gl
-  skip_cleanup: true
+  cleanup: false
