@@ -21,7 +21,7 @@ deploy:
   provider: releases
   file: ./glxgears.png
   api_key:
-    secure: daece993192b010a3baf16bcf3827fcbd8bac3c1
+    secure: 98605ec7ca6204efcceaffdb2166de8c502fa7b0
   skip_cleanup: true
 script:
   - timeout 5 glxgears &
