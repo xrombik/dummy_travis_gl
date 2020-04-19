@@ -20,4 +20,4 @@ before_script:
 script:
   - timeout 7 glxgears &
   - sleep 5
-  - xwd -name "glxgears" | convert xwd:- "$1"
+  - xwd -name "glxgears" | convert xwd:- "glxgears.png"
