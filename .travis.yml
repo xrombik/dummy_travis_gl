@@ -17,6 +17,10 @@ before_script:
   --background --exec /usr/bin/Xvfb -- :99 -screen 0 1400x900x24 -ac +extension GLX
   +render;"
 - sleep 3
+script:
+- timeout 5 glxgears &
+- sleep 3
+- xwd -name "glxgears" | convert xwd:- "glxgears.png"
 deploy:
   provider: releases
   token:
@@ -25,7 +29,3 @@ deploy:
   on:
     repo: xrombik/dummy_travis_gl
   skip_cleanup: true
-script:
-- timeout 5 glxgears &
-- sleep 3
-- xwd -name "glxgears" | convert xwd:- "glxgears.png"
