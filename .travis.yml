@@ -4,7 +4,6 @@ os:
 - linux
 notifications:
   email: false
-sudo: required
 dist: xenial
 services:
 - xvfb
@@ -20,7 +19,7 @@ before_script:
 - sleep 3
 deploy:
   provider: releases
-  api_key:
+  token:
     secure: mdpAlwQPqX37GzOIahyZBH3t8fpWSal+zHUcfTrGBhStVJlhy1eGyz2l0Rl03+48YmFp0kl/gkVPm2Q6inLzUlfKY68jhSrMgvY8qQJCn5Zr2v1np1RoM49XvZcReKG04PxoKXrTTJqhLfMWXgfipRs2nZLULXseL7aYAtV/nrX8FjoiNWV2sQxH170DZ50uK7JusM0/ylwifYq+vm3q+8jgsvBIWYh+1EV+033JyENO1yd3GOaL3fh4wvSQctfu8pdmAofGfNeWBoPcc43VU/uoOKZhRZLTnzZIQneeK+9R/6ryBzdd+3HLEXHmmjeKvImU+hVbdiiW1Pym+tt0h6sbhWIy0vPJiHTkvICQ5ETgLPmcdOgDqYr08/ckNcpZq/MiuuKyOJO1AzGDrjJROioT0NEwXsgCMHD2Aa3r6ifiK61CwmceyeOhKKnVQu5+t2vcSckF0/YFIVBisi39a8VgBUbOPcH9RebGGzunRAox84hcYYZJ6j5SBfIpSt9+5XocnMLRMMWzgNHRVk963zEcSZR2h4pdmORK5IKEeRsEo76GKWR7MmTuPNNdA0dgT8M5zk6b0mwq2bxcyvAf62tAy+vHjvH0kGcO2xyedoQz7TknSFDKW//PCEMcufMVXqZ7/5LnCzWW7F9H6xww67RhAtlidznOFkhYTSK4V+4=
   file: glxgears.png
   on:
