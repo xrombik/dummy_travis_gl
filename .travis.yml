@@ -19,7 +19,7 @@ before_script:
   - sleep 3 
 deploy:
   provider: releases
-  api_key: 1238beb0d4bd8e16fc0be852fc2c4bcb2f93d21b
+  api_key: 
   file: ./glxgears.png
   skip_cleanup: true
 script:
